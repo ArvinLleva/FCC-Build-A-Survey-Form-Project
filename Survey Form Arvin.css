@@ -17,6 +17,7 @@ form {
 }
 
 #main {
+    background: url(https://github.com/ArvinLleva/FCC-Build-A-Survey-Form-Project/blob/master/soft_kill.png?raw=true);
     border: 1px solid #999;
     border-radius: 3px;
     box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.4);
@@ -24,4 +25,5 @@ form {
     max-width: 1200px;
     margin: auto;
     font-weight: bold;
+    opacity:.95;
 }
