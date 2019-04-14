@@ -1,0 +1,27 @@
+html {
+    background-image: url(https://steemitimages.com/DQmcKEy33PDuvAHeYs2taX5RXozEbVTtAmxCtKUGf7WMQRU/images.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white;
+
+}
+
+form {
+    margin: 0 auto;
+    width: 400px;
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+}
+
+#main {
+    border: 1px solid #999;
+    border-radius: 3px;
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.4);
+    font-family: 'Righteous', cursive;
+    max-width: 1200px;
+    margin: auto;
+    font-weight: bold;
+}
