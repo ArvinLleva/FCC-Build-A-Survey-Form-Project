@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <link rel="stylesheet" href="Survey Form Arvin.css"> 
 <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
 <html>
     <head>
         <meta charset="UTF-8">
@@ -13,33 +13,106 @@
     </head>
     <body>
         <main id="main" >
-            <h1 id="title">Fighting Game Survey Form</h1>
-            <p id="description">Gathering Data about the Fighting Game Community</p>
+            <div id="header-container">
+                <h1 id="title">Fighting Game Survey Form</h1>
+                <p id="description">Gathering Data about the Fighting Game Community</p>
+            </div>
             <form id="survey-form">
-                <div>
+                <div id="name-section">
                     <label for="name" id="name-label">Name: </label>
                     <input type="text" id="name" name="user_name" placeholder="Name" required>
                 </div>
 
-                <div>
+                <div id="email-section">
                     <label for="email-label" id="email-label">E-mail:</label>
                     <input type="email" id="email" name="email" placeholder="email" required>
                 </div>
 
-                <div>
+                <div id="age-section">
                     <label for="number" id="number-label">Age:</label>
-                    <input type="number" id="number" name="user_age" placeholder="Age" min="0" max="100" required>
-                </div><br>
-
-                <div>
-                    <label for="dropdown">What system do you usually use?</label>
-                    <input type="text" id="dropdown" name="controller" placeholder="Controller"> 
+                    <input type="number" id="number" name="user_age" placeholder="Age" min="0" max="1000" required>
                 </div>
 
-                <div>
-                    <label for=""></label>
+                <div id="top-middle-section">
+                    <div id="system-section">
+                        <label for="dropdown">What system do you usually use?</label>
+                        <div id="dropdown-systems">
+                            <select id="dropdown" name="system">
+                                <option value="" disabled selected hidden>Choose a system</option>
+                                <option value="sony-consoles">Sony Consoles</option>
+                                <option value="microsoft-consoles">Microsoft Consoles</option>
+                                <option value="nintendo-consoles">Nintendo Consoles</option>
+                                <option value="personal-computers">Personal Computers</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div id="controller-section">
+                        <label for="radio-controller">What is your controller preference?</label>
+                        
+                        <ul id="controllers">
+                            <li><input type="radio" name="radio-controller" value="pad" id="controllerChoice1">
+                            <label for="controllerChoice1">Pad</label></li> 
+
+                            <li><input type="radio" name="radio-controller" value="fight-stick" id="controllerChoice2">
+                            <label for="controllerChoice2">Fight Stick</label> </li>
+            
+                            <li><input type="radio" name="radio-controller" value="hitbox" id="controllerChoice3">
+                            <label for="controllerChoice3">HitBox</label> </li>
+            
+                            <li><input type="radio" name="radio-controller" value="keyboard" id="controllerChoice4">
+                            <label for="controllerChoice4">Keyboard</label> </li>
+                                
+                            <li><input type="radio" name="radio-controller" value="other" id="controllerChoice5">
+                            <label for="controllerChoice5">Other</label></li>
+                        </ul>
+                    </div>                    
+                </div>
+
+                <div id="game-section">
+                    <label for="checkbox-games">What are your favorite fighting game franchises? (check all that apply)</label><br>
+                    <ul id="games">
+                        <li><label><input type="checkbox" name="checkbox-games" value="blazblue">BlazBlue</label></li>
+                        <li><label><input type="checkbox" name="checkbox-games" value="capcom-vs.-series">Capcom Vs. Series</label></li>
+                        <li><label><input type="checkbox" name="checkbox-games" value="darkstalkers">Darkstalkers</label></li>
+                        <li><label><input type="checkbox" name="checkbox-games" value="dead-or-alive">Dead or Alive</label></li>
+                        <li><label><input type="checkbox" name="checkbox-games" value="dragon-ball">Dragon Ball</label></li>
+                        <li><label><input type="checkbox" name="checkbox-games" value="guilty-gear">Guilty Gear</label></li>
+                        <li><label><input type="checkbox" name="checkbox-games" value="injustice">Injustice</label></li>
+                        <li><label><input type="checkbox" name="checkbox-games" value="killer-instinct">Killer Instinct</label> </li>
+                        <li><label><input type="checkbox" name="checkbox-games" value="mortal-kombat">Mortal Kombat</label></li>
+                        <li><label><input type="checkbox" name="checkbox-games" value="king-of-fighters">King of Fighters</label></li>
+                        <li><label><input type="checkbox" name="checkbox-games" value="samurai-showdown">Samurai Showdown</label></li>
+                        <li><label><input type="checkbox" name="checkbox-games" value="skullgirls">Skullgirls</label></li>
+                        <li><label><input type="checkbox" name="checkbox-games" value="soulcaliber">Soulcalibur</label></li>
+                        <li><label><input type="checkbox" name="checkbox-games" value="street-fighter">Street Fighter</label></li>
+                        <li><label><input type="checkbox" name="checkbox-games" value="super-smash-bros.">Super Smash Bros.</label></li>
+                        <li><label><input type="checkbox" name="checkbox-games" value="tekken">Tekken</label></li>
+                        <li><label><input type="checkbox" name="checkbox-games" value="under-night-in-birth">Under Night In-Birth</label></li>
+                        <li><label><input type="checkbox" name="checkbox-games" value="-virtua-fighter">Virtua Fighter</label></li>
+                        <li><label><input type="checkbox" name="checkbox-games" value="yatagarasu">Yatagarasu</label></li>
+                        <li><label><input type="checkbox" name="checkbox-games" value="other">Other</label></li>
+                    </ul>
+                </div>
+
+                <div id="text-area-section">
+                    <label for="three-favorite-FGC">Who are your three favorite FGC players/members?</label><br>
+                    
+                    <textarea rows="1" cols="100" placeholder="1. Favorite FGC Member/Player" name="three-favorite-FGC"></textarea>
+                    <textarea rows="1" cols="100" placeholder="2. Favorite FGC Member/Player" name="three-favorite-FGC"></textarea>
+                    <textarea rows="1" cols="100 "placeholder="3. Favorite FGC Member/Player" name="three-favorite-FGC"></textarea>   
+                   
+                </div>
+
+                <div id="submit-section">
+                    <button id="submit" type="submit">Submit Survey</button>
                 </div>
             </form>
+            <p id="credit">Coded by Arvin Lleva 04/14/2019</p>
         </main>
+
+        <audio src="Marvel Vs Capcom 2 Music Player Select Extended HD-[AudioTrimmer.com].mp3" autoplay controls loop type="audio/mp4"></audio>
     </body>
+
 </html>

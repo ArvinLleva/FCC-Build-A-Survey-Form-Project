@@ -5,25 +5,78 @@ html {
     -o-background-size: cover;
     background-size: cover;
     color: white;
-
 }
 
-form {
+#survey-form {
     margin: 0 auto;
-    width: 400px;
+    margin-bottom: 1.5em;
+    max-width: 1000px;
     padding: 1em;
     border: 1px solid #CCC;
     border-radius: 1em;
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.4);
+    
+}
+#header-container {
+    text-align: center;
 }
 
 #main {
-    background: url(https://github.com/ArvinLleva/FCC-Build-A-Survey-Form-Project/blob/master/soft_kill.png?raw=true);
-    border: 1px solid #999;
-    border-radius: 3px;
+    background: url(https://github.com/ArvinLleva/FCC-Build-A-Survey-Form-Project/blob/master/zwartevilt.png?raw=true);
+    border: 1px solid #CCC;
+    border-radius: 1em;
     box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.4);
     font-family: 'Righteous', cursive;
-    max-width: 1200px;
+    max-width: 1100px;
     margin: auto;
     font-weight: bold;
-    opacity:.95;
+    opacity: 0.95;
 }
+
+audio {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    transform: scale(.75);
+}
+
+#games {
+    column-count: 5;
+}
+
+#controllers {
+    margin-top: .25em;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    justify-content: left; 
+}
+
+select {
+    margin-top: 1em;
+
+}
+
+#name, #email, #number {
+    width: 100%;
+}
+
+#name-section, #email-section, #age-section, #system-section, #controller-section, #game-section, #text-area-section, #submit-section{
+    text-align: left;
+    margin: 1em;
+}
+
+textarea {
+    width: 100%;
+    margin-top: .5em;
+}
+
+#credit {
+    text-align: center;
+}
+
